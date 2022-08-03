@@ -1,84 +1,155 @@
-const employess={
-employee0 :{
+var ID=999;
+const employee0 ={
+    employeeId:++ID,
     "Full Name":"Ghazi Samer",
     salary:1728,
     Department:"Administration",
     Level:"Senior",
-    "Image URL":[]
-    },
-    employee1 :{
+    "Image URL":[],
+    salary:0,
+uniqueId:function(){
+    return this.employeeId;
+},
+gitRandomSenior:function(){
+    let salary=Math.floor(Math.random()*(2000-1500)+1500);
+    let netSalary=salary-(salary*0.075);
+    console.log("Employee salary : "+salary );
+   // console.log("the netTax is "+netSalary);
+}
+    }
+  const   employee1={
+    employeeId:++ID,
         "Full Name":"Lana Ali",
         salary:1809,
         Department:"Finance",
         Level:"Senior",
-        "Image URL":[]
+        "Image URL":[],
+        salary:0,
+        uniqueId:function(){
+            return this.employeeId;
         },
-        employee2 :{
+        gitRandomSenior:function(){
+            let salary=Math.floor(Math.random()*(2000-1500)+1500);
+            let netSalary=salary-(salary*0.075);
+            console.log("Employee salary : "+salary );
+           // console.log("the netTax is "+netSalary);
+        }
+        }
+
+       const  employee2 ={
+        employeeId:++ID,
             "Full Name":"Tamara Ayoub",
             salary:1589,
             Department:"Marketing",
             Level:"Senior",
-            "Image URL":[]
+            "Image URL":[],
+            salary:0,
+            uniqueId:function(){
+                return this.employeeId;
             },
-            employee3 :{
+            gitRandomSenior:function(){
+                let salary=Math.floor(Math.random()*(2000-1500)+1500);
+                let netSalary=salary-(salary*0.075);
+                console.log("Employee salary : "+salary );
+               // console.log("the netTax is "+netSalary);
+            }
+            }
+
+           const  employee3={
+            employeeId:++ID,
                 "Full Name":"Safi Walid",
                 salary:1178,
                 Department:"Administration",
                 Level:"Mid-Senior",
-                "Image URL":[]
+                "Image URL":[],
+                salary:0,
+                uniqueId:function(){
+                    return this.employeeId;
                 },
-                employee4 :{
+                gitRandomMidSenior:function(){
+                    let salary=Math.floor(Math.random()*(1500-1000)+1000);
+                    let netSalary=salary-(salary*0.075);
+                    console.log("Employee salary : "+salary );
+                   // console.log("the netTax is "+netSalary);
+                }
+                }
+
+               const employee4={
+                employeeId:++ID,
                     "Full Name":"Omar Zaid",
                     salary:480,
                     Department:"Development",
                     Level:"Senior",
-                    "Image URL":[]
+                    "Image URL":[],
+                    salary:0,
+                    uniqueId:function(){
+                        return this.employeeId;
                     },
-                    employee5 :{
+                    gitRandomSenior:function(){
+                        let salary=Math.floor(Math.random()*(2000-1500)+1500);
+                        let netSalary=salary-(salary*0.075);
+                        console.log("Employee salary : "+salary );
+                       // console.log("the netTax is "+netSalary);
+                    }
+                    }
+
+                  const  employee5={
+                    employeeId:++ID,
                         "Full Name":"Rana Saleh",
                         salary:1121,
                         Department:"Development",
                         Level:"Junior",
-                        "Image URL":[]
+                        "Image URL":[],
+                        salary:0,
+                        uniqueId:function(){
+                            return this.employeeId;
                         },
-                        employee6 :{
+                        gitRandomJunior:function(){
+                            let salary=Math.floor(Math.random()*(1000-500)+500);
+                            let netSalary=salary-(salary*0.075);
+                            console.log("Employee salary : "+salary );
+                           // console.log("the netTax is "+netSalary);
+                        }
+                        }
+
+                       const employee6={
+                        employeeId:++ID,
                             "Full Name":"Hadi Ahmad",
                             salary:1250,
                             Department:"Finance",
                             Level:"Mid-Senior",
-                            "Image URL":[]
-                         
-                        },
-
-                        uniqueId:function(){
-                            this.employee0.ID=1000;
-                            this.employee1.ID=1001;
-                            this.employee2.ID=1002;
-                            this.employee3.ID=1003;
-                            this.employee4.ID=1004;
-                            this.employee5.ID=1005;
-                            this.employee6.ID=1006;
-                        },
-                        calcSalary:function(){
-                            function getRndInteger(min,max){
-                         this.salary=Math.floor(Math.random()*(max-min))+min;
-                        
-                         
-               
+                            "Image URL":[],
+                            salary:0,
+                            uniqueId:function(){
+                                return this.employeeId;
+                            },
+                            gitRandomMidSenior:function(){
+                                let salary=Math.floor(Math.random()*(1500-1000)+1000);
+                                let netSalary=salary-(salary*0.075);
+                                console.log("Employee salary : "+salary );
+                               // console.log("the netTax is "+netSalary);
                             }
-                  
-                  
+                         
                         }
+
                         
-                        }
-                        employess.calcSalary();
-employess.uniqueId();
-
-
-for(const i in employess){
-    console.log("Employee name :",employess[i]["Full Name"]);
-    console.log("Employee salary:",employess[i]["salary"]);
-    console.log("\n");
-}
-
-
+console.log("Employee name :"+employee0["Full Name"]);
+employee0.gitRandomSenior();
+console.log("\n");
+console.log("Employee name :"+employee1["Full Name"]);
+employee1.gitRandomSenior();
+console.log("\n");
+console.log("Employee name :"+employee2["Full Name"]);
+employee2.gitRandomSenior();
+console.log("\n");
+console.log("Employee name :"+employee3["Full Name"]);
+employee3.gitRandomMidSenior();
+console.log("\n");
+console.log("Employee name :"+employee4["Full Name"]);
+employee4.gitRandomSenior();
+console.log("\n");
+console.log("Employee name :"+employee5["Full Name"]);
+employee5.gitRandomJunior();
+console.log("\n");
+console.log("Employee name :"+employee6["Full Name"]);
+employee6.gitRandomMidSenior();
